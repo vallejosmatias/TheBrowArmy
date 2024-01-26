@@ -4,6 +4,9 @@
   box-sizing: border-box;
 }
 
+body{
+  background-color: #000;
+}
 /* icon wpp */
 .btn-wpp{
   width: 55px;
@@ -85,4 +88,102 @@
 
 .nav-link.btn-inicio:hover{
   background-color:  rgba(75, 74, 74, 0.637);
+}
+
+.carousel-item{
+  height: 300px;
+}
+
+.container-home{
+  background:linear-gradient(rgba(5, 7, 12, .85),rgba(5, 7, 12, .85)), url("https://image.lexica.art/full_webp/1341090a-be14-4578-b2e3-0fec610fe1ce") center/cover;
+  height: calc(100vh - 56px - 65px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-home .container-text{
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  text-align: center;
+  width: 100%;
+}
+
+.container-text p{
+  font-size: 16px;
+  line-height: 3px;
+  margin-top: 20px;
+  opacity: 0.7;
+}
+
+.container-text h1{
+  margin-bottom: 30px;
+  text-decoration:1px solid #fff underline;
+}
+
+.container-icons{
+  display: flex;
+  margin: 25px;
+}
+
+.container-icons p{
+  width: 110px;
+  height: 110px;
+  text-align: center;
+  color: #ffffffc2;
+  margin: 20px;
+  line-height: 20px;
+  padding: 35px 2px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+}
+
+.container-icons p:nth-child(1){
+  border: 2px solid #f56666;
+}
+.container-icons p:nth-child(2){
+  border: 2px solid #f764ef;
+}
+.container-icons p:nth-child(3){
+  border: 2px solid #f8dd62;
+}
+.container-icons p:nth-child(4){
+  border: 2px solid #6a79fa;
+}
+
+footer{
+  background-color: #212529;
+  height: 65px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.container-redes{
+  display:flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.container-redes a svg{
+  color: #ffffff94;
+}
+.container-redes a{
+  font-size: 15px;
+  text-decoration: none;
+  color: #ffffff94;
+}
+.container-cube{
+  color: #ffffff94;
+  font-size: 10px;
+  height: 20px;
+  background-color: #33373b;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  padding: 3px;
 }

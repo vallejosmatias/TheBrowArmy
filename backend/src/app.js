@@ -3,6 +3,8 @@ import dotenv from "dotenv";
 import { __dirname } from "./utils.js";
 import homeRouter from "./routes/home.route.js";
 import loginRoute from "./routes/login.ruote.js";
+import handlebars from "express-handlebars";
+import path from "path";
 
 dotenv.config();
 
@@ -12,7 +14,11 @@ const PORT = process.env.PORT || 8080;
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
-app.use(express.static(__dirname + "public"));
+app.use(express.static(path.join(__dirname, "public")));
+
+app.engine("handlebars", handlebars.engine());
+app.set("views", path.join(__dirname + "/views"));
+app.set("view engine", "handlebars");
 
 app.use("/", homeRouter);
 app.use("/login", loginRoute);
