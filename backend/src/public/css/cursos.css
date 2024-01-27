@@ -1,0 +1,22 @@
+.container-fluid .container-cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 5px 0 20px;
+}
+
+.card.text-center{
+    margin: 10px;
+}
+
+.container-fluid.section{
+    padding: 0;
+    width: 100%;
+    text-align: center;
+    margin: 30px 0;
+}
+
+.container-fluid.section h3{
+    color: #ffffffac;
+    margin: 10px 0;
+}

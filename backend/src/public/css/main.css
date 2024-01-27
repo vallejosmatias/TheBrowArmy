@@ -10,10 +10,14 @@ body{
 /* icon wpp */
 .btn-wpp{
   width: 55px;
+  display: flex;
+  text-decoration: none;
+  justify-content: center;
+  align-items: center;
   position: fixed;
   height: 55px;
   line-height: 55px;
-  bottom: 30px; 
+  bottom: 90px; 
   right: 30px;
   background-color: #0df053;
   color: #fff;
